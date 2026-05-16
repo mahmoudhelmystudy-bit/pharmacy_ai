@@ -11,6 +11,16 @@ st.set_page_config(
 )
 st.markdown("""
 <style>
+/* إخفاء زر Fork ورابط GitHub */
+button[kind="header"],
+a[href*="github.com"],
+[data-testid="stToolbar"] {
+    display: none !important;
+}
+</style>
+""", unsafe_allow_html=True)
+st.markdown("""
+<style>
 
 .main {
     padding-top: 1rem;
