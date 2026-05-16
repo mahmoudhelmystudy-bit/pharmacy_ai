@@ -14,9 +14,7 @@ st.markdown("""
 /* إخفاء زر Fork ورابط GitHub */
 button[kind="header"],
 a[href*="github.com"],
-[data-testid="stToolbar"] {
-    display: none !important;
-}
+
 </style>
 """, unsafe_allow_html=True)
 st.markdown("""
