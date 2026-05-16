@@ -11,6 +11,7 @@ st.set_page_config(
 )
 st.markdown("""
 <style>
+/* Custom Footer */
 .footer {
     text-align: center;
     margin-top: 80px;
@@ -26,20 +27,28 @@ st.markdown("""
     font-weight: 600;
 }
 
+/* إخفاء Footer الافتراضي */
 footer {
     visibility: hidden;
 }
 
+/* إخفاء القائمة الرئيسية */
 #MainMenu {
     visibility: hidden;
 }
 
+/* إخفاء الخط الملون أعلى الصفحة */
 [data-testid="stDecoration"] {
     display: none;
 }
 
-/* إخفاء رابط GitHub فقط */
+/* إخفاء رابط GitHub وأيقونته */
 a[href*="github.com"] {
+    display: none !important;
+}
+
+/* إخفاء زر Fork إن ظهر */
+button[kind="header"] {
     display: none !important;
 }
 </style>
