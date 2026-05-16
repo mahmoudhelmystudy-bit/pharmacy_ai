@@ -12,7 +12,7 @@ st.set_page_config(
 st.markdown("""
 <style>
             
-           .footer {
+.footer {
     text-align: center;
     margin-top: 80px;
     padding: 20px 0;
