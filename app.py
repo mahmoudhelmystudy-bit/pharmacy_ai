@@ -6,11 +6,22 @@ from interactions import check_interaction
 from dose_calculator import calculate_drug_dose, estimate_weight_from_age
 st.set_page_config(
     page_title="Pharmacy AI",
-    page_icon="",
+    page_icon="℞",
     layout="wide"
 )
 st.markdown("""
 <style>
+            footer {
+    visibility: hidden;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
+
+[data-testid="stDecoration"] {
+    display: none;
+}
 /* إخفاء زر Fork ورابط GitHub */
 button[kind="header"],
 a[href*="github.com"],
@@ -83,7 +94,7 @@ div[data-testid="stVerticalBlock"]:has(.result-card) {
 </style>
 """, unsafe_allow_html=True)
 st.markdown("""
-<h1>💊 Pharmacy AI</h1>
+<h1> Pharmacy AI</h1>
 <h3 style='text-align:center; color:gray;'>Clinical Decision Support System</h3>
 <hr>
 """, unsafe_allow_html=True)
