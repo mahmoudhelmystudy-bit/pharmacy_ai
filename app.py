@@ -11,6 +11,21 @@ st.set_page_config(
 )
 st.markdown("""
 <style>
+            
+           .footer {
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px 0;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 13px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    line-height: 1.8;
+}
+
+.footer strong {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+} 
 /* إخفاء زر Fork ورابط GitHub */
 button[kind="header"],
 a[href*="github.com"],
@@ -348,3 +363,30 @@ elif module == "Lab Interpretation":
     st.header("🧪 Lab Interpretation")
     st.markdown('<div class="result-card"></div>', unsafe_allow_html=True)
     st.info("Coming soon.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    st.markdown("""
+<div class="footer">
+    © 2026 Pharmacy AI. All Rights Reserved.<br>
+    Developed by <strong>Dr. Mahmoud Helmy</strong>
+</div>
+""", unsafe_allow_html=True)
