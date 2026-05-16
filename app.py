@@ -11,17 +11,6 @@ st.set_page_config(
 )
 st.markdown("""
 <style>
-            footer {
-    visibility: hidden;
-}
-
-#MainMenu {
-    visibility: hidden;
-}
-
-[data-testid="stDecoration"] {
-    display: none;
-}
 /* إخفاء زر Fork ورابط GitHub */
 button[kind="header"],
 a[href*="github.com"],
