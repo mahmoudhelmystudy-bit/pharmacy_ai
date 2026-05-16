@@ -11,21 +11,6 @@ st.set_page_config(
 )
 st.markdown("""
 <style>
-            
-.footer {
-    text-align: center;
-    margin-top: 80px;
-    padding: 20px 0;
-    color: rgba(255, 255, 255, 0.55);
-    font-size: 13px;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    line-height: 1.8;
-}
-
-.footer strong {
-    color: rgba(255, 255, 255, 0.85);
-    font-weight: 600;
-} 
 /* إخفاء زر Fork ورابط GitHub */
 button[kind="header"],
 a[href*="github.com"],
@@ -88,10 +73,18 @@ div[data-testid="stVerticalBlock"]:has(.result-card) {
 
 .footer {
     text-align: center;
-    margin-top: 50px;
-    color: gray;
-    font-size: 14px;
+    margin-top: 80px;
+    padding: 20px 0;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 13px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    line-height: 1.8;
 }
+
+.footer strong {
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+} 
 
 </style>
 """, unsafe_allow_html=True)
